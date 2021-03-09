@@ -370,7 +370,6 @@ let bracketsCreator = (numberOfBrackets, bracketPlace, currentRound) => {
       `<div class="display-flex">
         <span class="game-number">${gameNumber++}</span>
         <div class="brackets" id="bracket${roundNum}${i + 1}"></div>
-
       </div>
         `
     );
@@ -402,13 +401,6 @@ let bracketsCreator = (numberOfBrackets, bracketPlace, currentRound) => {
           `
         );
       }
-    }
-    if (i % 2 !== 0) {
-      $(`#${bracketPlace} > #round${roundNum} > div`).append(
-        `
-      <hr class="line" />
-      `
-      );
     }
   }
 };
