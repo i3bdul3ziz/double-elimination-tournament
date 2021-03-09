@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>double-elimination tournament</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>double-elimination tournament</h1>
+      <form class="tournament-form" id="tournament-form">
+        <div>
+          <label class="form-labels" for="participants"
+            >participants number</label
+          >
+          <input
+            class="form-inputs"
+            type="text"
+            name="participants"
+            placeholder="8"
+          />
+        </div>
+        <div>
+          <label class="form-labels" for="names">participants names</label>
+          <input
+            class="form-inputs"
+            type="text"
+            name="names"
+            placeholder="a,b,c,d,e,f,g,h"
+          />
+        </div>
+        <div>
+          <label class="form-labels" for="names">tournament name</label>
+          <input
+            class="form-inputs"
+            type="text"
+            name="tournament"
+            placeholder="test"
+          />
+        </div>
+      </form>
+      <button class="form-button" id="submit-form" type="submit">
+        create tournament
+      </button>
+    </div>
+
+    <div class="winner-container" id="winner">
+      <p class="number-one">1st</p>
+      <div class="winner" id="">
+        <div class="winner-index" id="winner-index"></div>
+        <div class="winner-name" id="winner-name"></div>
+      </div>
+    </div>
+    <div class="tournament-name" id="tournament-name">
+      <p></p>
+    </div>
+    <div class="display-flex" id="upperBrackets"></div>
+    <div class="display-flex" id="lowerBrackets"></div>
+  </body>
+  <script src="js/index.js"></script>
+</html>

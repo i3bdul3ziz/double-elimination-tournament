@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400&display=swap");
+
+body,
+html {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Tajawal", sans-serif;
+  text-align: center;
+  background: rgb(77, 1, 143);
+}
+
+.form-container {
+  color: white;
+  margin: 2.5% auto;
+  text-align: center;
+  width: fit-content;
+}
+
+.tournament-form {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.form-labels {
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.form-inputs {
+  display: block;
+  width: 25em;
+  padding: 5px 10px;
+  border-radius: 2.5px;
+  border: 1px solid #9c7979;
+  margin: 10px;
+}
+
+.form-inputs:focus {
+  outline: none;
+}
+
+.form-button {
+  width: 20em;
+  margin: 15px;
+  color: white;
+  background-color: rgb(255, 106, 57);
+  border: none;
+  font-family: "Tajawal", sans-serif;
+  font-size: 15px;
+  padding: 7px 20px;
+  border-radius: 5px;
+  font-weight: 400;
+}
+
+.form-button:hover {
+  background-color: rgb(255, 127, 85);
+  cursor: pointer;
+}
+
+.tournament-name > p {
+  color: #fff;
+  font-size: 2.7em;
+  margin-bottom: 0;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.game-number {
+  margin: auto 0;
+  color: #fff;
+}
+
+.rounds {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0;
+  padding: 30px;
+}
+
+.brackets {
+  height: inherit;
+  width: 13em;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(255, 106, 57);
+  margin: 15px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.players {
+  color: #fff;
+  width: 100%;
+  margin: 2.5px;
+  text-align: center;
+  font-size: 15px;
+  display: block;
+}
+
+.players:hover {
+  /* background-color: rgb(255, 144, 107); */
+  cursor: pointer;
+}
+
+.line {
+  border: rgb(77, 1, 143) 0.5px solid;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.player-index {
+  background-color: rgb(255, 144, 107);
+  display: inline-block;
+  padding: 0.2em;
+  float: left;
+  margin: 0;
+  text-align: center;
+  width: 20%;
+  height: 1.5em;
+  border-radius: 1.5px;
+}
+
+.players:hover > .player-index {
+  background-color: #67388b;
+}
+
+.player-name {
+  display: inline-block;
+  padding: 0.2em;
+  margin: 0;
+  text-align: center;
+  width: 70%;
+}
+
+.player-index > p,
+.player-name > p {
+  margin: 0;
+}
+
+.winner-container {
+  margin: 0 auto;
+  width: 30%;
+}
+
+.winner {
+  color: #fff;
+  width: 100%;
+  margin: 2.5px;
+  text-align: center;
+  font-size: 15px;
+  display: block;
+  padding: 3px;
+  background-color: #ffffff;
+  border: 1px solid #ff8259;
+  border-radius: 3px;
+  height: 28px;
+}
+
+.winner-index {
+  background-color: #4d018f;
+  display: inline-block;
+  padding: 0.2em;
+  float: left;
+  margin: 0;
+  text-align: center;
+  width: 20%;
+  height: auto;
+  height: 1.5em;
+  border-radius: 1.5px;
+}
+
+.winner-name {
+  display: inline-block;
+  padding: 0.2em;
+  margin: 0;
+  text-align: center;
+  width: 70%;
+}
+
+.winner-index > p,
+.winner-name > p {
+  margin: 0;
+  height: auto;
+}
+
+.winner-name > p {
+  color: #4d018f;
+}
+
+.number-one {
+  margin: 3px 0;
+  font-weight: 800;
+  font-size: 25px;
+  color: #fff;
+  text-align: center;
+}
